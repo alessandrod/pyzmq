@@ -54,6 +54,7 @@ except ImportError:
 
 from zmq.eventloop.platform.auto import set_close_exec, Waker
 
+from zmq import green as zmq
 from zmq import (
     Poller,
     POLLIN, POLLOUT, POLLERR,
